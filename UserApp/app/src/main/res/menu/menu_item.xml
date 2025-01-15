@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--test-->
+    <item
+        app:showAsAction="always"
+        android:title=" "
+        android:icon="@drawable/baseline_menu_24">
+
+        <menu>
+
+            <item
+                android:id="@+id/ip"
+                android:title="IP address"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_router_24"/>
+
+            <item
+                android:id="@+id/port"
+                android:title="Port"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_bolt_24"/>
+
+            <item
+                android:id="@+id/timer"
+                android:title="Sending Duration"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_timer_24"/>
+
+            <item
+                android:id="@+id/exit"
+                android:title="Exit App"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_exit_to_app_24"/>
+
+        </menu>
+
+    </item>
+
+</menu>
