@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port6" />
+
+    <TextView
+        android:id="@+id/text_port6"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Sensor Type:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_at_the_top2" />
+
+    <TextView
+        android:id="@+id/text_port5"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Maximum Value:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_port4" />
+
+    <EditText
+        android:id="@+id/max_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="12dp"
+        android:ems="4"
+        android:inputType="number|numberDecimal"
+        android:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port5" />
+
+    <EditText
+        android:id="@+id/min_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="12dp"
+        android:ems="4"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port4" />
+
+    <TextView
+        android:id="@+id/text_port4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Minimum Value:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_port6" />
+
+    <View
+        android:id="@+id/rectangle_at_the_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#2676ff"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:text="New Sensor"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_at_the_top2" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#ff0000"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#0040FF"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

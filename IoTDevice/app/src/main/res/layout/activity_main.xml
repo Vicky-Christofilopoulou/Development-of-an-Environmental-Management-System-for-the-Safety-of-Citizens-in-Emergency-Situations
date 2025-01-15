@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/start_broadcast"
+
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#299800"
+        android:text="Start Broadcast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/value_slider"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="-4dp"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port8" />
+
+    <TextView
+        android:id="@+id/text_port9"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Enabled:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_port8" />
+
+    <TextView
+        android:id="@+id/text_port3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Sensor Type:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+    <TextView
+        android:id="@+id/text_port8"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Sensor Value:"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_port3" />
+
+    <TextView
+        android:id="@+id/sensor_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Default"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port3" />
+
+    <View
+        android:id="@+id/rectangle_at_the_top3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#2676ff"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensors"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_at_the_top3" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_at_the_top3"/>
+
+    <ImageButton
+        android:id="@+id/settings_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FF0000"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_at_the_top3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_at_the_top3"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <CheckBox
+        android:id="@+id/sensor_enabled_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_port9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
