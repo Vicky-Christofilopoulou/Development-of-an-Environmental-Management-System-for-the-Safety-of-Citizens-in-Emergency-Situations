@@ -16,6 +16,6 @@ Additionally, the Edge Server performs analysis of the data from the IoT devices
 
 ## Contributors of the project :
 * [Zannis Vidalis](https://github.com/ZannisVidalis)
-* [Eleni Feslian](https://github.com/sdi2000204)
+* [Eleni Feslian](https://github.com/EleniFeslian)
 * [Konstantinos Sgouras](https://github.com/KonosSgouras)
 * [Vicky Christofilopoulou]( https://github.com/Vicky-Christofilopoulou )
