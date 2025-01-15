@@ -10,7 +10,8 @@ The Edge Server is responsible for collecting, analyzing, and exchanging data be
 Additionally, the Edge Server performs analysis of the data from the IoT devices to identify potential risks. In the event of detecting a risk, it notifies the Android devices and logs the identified threats into a MySQL database.
 
 
-
+The implementation and the results are explained on this pdf.
+[ReadMe.pdf](https://github.com/user-attachments/files/18423010/ReadMe.pdf)
 
 
 
